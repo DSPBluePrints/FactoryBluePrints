@@ -27,15 +27,17 @@
 然后进入游戏，在蓝图页面依次点击**新建空蓝图**，**粘贴**，**保存更改**，就可以将蓝图代码保存到本地，像平常那样使用。
 > 常见问题：  
 > Q: 为什么蓝图仓库网页打开特别慢，我该怎么办？  
-> A: 蓝图仓库被托管在github上，可以通过在[Watt Toolkit](https://steampp.net)(原名steam++)中开启github加速服务解决。（或者魔法？）
+> A: 蓝图仓库被托管在github上，可以通过在[Watt Toolkit](https://steampp.net)(原名steam++)中开启github加速服务解决。~~或者魔法？~~
 
 ### 进阶用法
 
-如果您有[git](https://git-scm.com/)的使用基础，可以直接将整个蓝图仓库`clone`到本地的蓝图文件夹内(约300mb)，并且可以通过`pull`命令进行对本地仓库自动更新。这样您就可以在游戏内直接访问完整的蓝图仓库，享受在线蓝图仓库与本地蓝图仓库无缝衔接的体验。
+如果您有[Git](https://git-scm.com/)的使用基础，可以将整个蓝图仓库用`clone`命令拉取到游戏的蓝图文件夹内(约300mb)。这样您将以蓝图合集的形式将完整的蓝图仓库下载到本地，**并且可以在游戏内直接访问**，享受在线蓝图仓库与游戏无缝衔接的体验。  
 
 ```cmd
 git clone https://github.com/DysonSphereBluePrints/FactoryBluePrints.git
 ```
+
+可以通过`pull`命令进行对本地蓝图文件夹进行更新。Git将自动检查上次更新以来发生变动的蓝图/蓝图合集，并以增量更新的形式更新本地仓库(约1-5mb)
 
 ```cmd
 git pull origin main
