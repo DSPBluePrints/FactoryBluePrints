@@ -2,7 +2,7 @@
 
 ## 简介
 
-这是游戏**戴森球计划**中的蓝图仓库，用于储存与分享来自社区的工厂蓝图  
+这是游戏[戴森球计划](https://store.steampowered.com/app/1366540/_/)中的蓝图仓库，用于储存与分享来自社区的工厂蓝图  
 
 蓝图主要由**小马蓝图群**成员与**CIDT设科院**成员贡献。为了对来自社区的庞大数量的蓝图进行分类、管理、储存与分享，我们打算将蓝图上传到github作为交流群文件的备份，并且将来可能进一步建设成为蓝图网。
 
@@ -23,7 +23,7 @@
 
 ### 基础用法
 
-您可以直接进入[蓝图仓库的网页](https://github.com/DysonSphereBluePrints/FactoryBluePrints)，寻找并打开自己需要的蓝图文件，点击位于蓝图代码右上方的**全选复制**(Copy raw contents)。  
+您可以直接进入[蓝图仓库的网页](https://github.com/DSPBluePrints/FactoryBluePrints)，寻找并打开自己需要的蓝图文件，点击位于蓝图代码右上方的**全选复制**(Copy raw contents)。  
 然后进入游戏，在蓝图页面依次点击**新建空蓝图**，**粘贴**，**保存更改**，就可以将蓝图代码保存到本地，像平常那样使用。
 > 常见问题：  
 > Q: 为什么蓝图仓库网页打开特别慢，我该怎么办？  
@@ -34,7 +34,7 @@
 如果您有[Git](https://git-scm.com/)的使用基础，可以将整个蓝图仓库用`clone`命令拉取到游戏的蓝图文件夹内(约300mb)。这样您将以蓝图合集的形式将完整的蓝图仓库下载到本地，**并且可以在游戏内直接访问**，享受在线蓝图仓库与游戏无缝衔接的体验。  
 
 ```cmd
-git clone https://github.com/DysonSphereBluePrints/FactoryBluePrints.git
+git clone https://github.com/DSPBluePrints/FactoryBluePrints.git
 ```
 
 可以通过`pull`命令进行对本地蓝图文件夹进行更新。Git将自动检查上次更新以来发生变动的蓝图/蓝图合集，并以增量更新的形式更新本地仓库(约1-5mb)
