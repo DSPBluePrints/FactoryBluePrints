@@ -1,3 +1,3 @@
-*.txt linguist-language=text
-*.md linguist-language=markdown
-*.html linguist-language=html
+*.txt linguist-language=ignore
+*.md linguist-language=ignore
+*.html linguist-language=ignore
