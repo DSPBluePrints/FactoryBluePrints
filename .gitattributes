@@ -1,3 +1,6 @@
 *.txt linguist-detectable=true
 *.md linguist-detectable=true
 *.html linguist-detectable=true
+
+*.html linguist-language=markdown
+_intro_ linguist-language=markdown
