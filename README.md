@@ -21,8 +21,6 @@
 
 ## 蓝图仓库使用方法
 
-视频使用教程：https://www.bilibili.com/video/bv1RK411Z7b2  
-
 ### 基础用法
 
 您可以直接进入[蓝图仓库的网页](https://github.com/DSPBluePrints/FactoryBluePrints)，寻找并打开自己需要的蓝图文件，点击位于蓝图代码右上方的**全选复制**(Copy raw contents)。  
@@ -33,7 +31,7 @@
 
 ### 进阶用法
 
-如果您有[Git](https://git-scm.com/)的使用基础，可以将整个蓝图仓库用`clone`命令拉取到游戏的蓝图文件夹内(约300mb)。这样您将以蓝图合集的形式将完整的蓝图仓库下载到本地，**并且可以在游戏内直接访问**，享受在线蓝图仓库与游戏无缝衔接的体验。  
+如果您有[Git](https://git-scm.com/)的使用基础，可以将整个蓝图仓库用`clone`命令拉取到游戏的蓝图文件夹内(约300mb)。这样您将以蓝图合集的形式将完整的蓝图仓库下载到本地，并且可以在游戏内直接访问，享受在线蓝图仓库与游戏无缝衔接的体验。  
 
 ```cmd
 git clone https://github.com/DSPBluePrints/FactoryBluePrints.git
@@ -45,6 +43,12 @@ git clone https://github.com/DSPBluePrints/FactoryBluePrints.git
 ```cmd
 git pull origin main
 ```
+
+### 相关链接
+
+主仓库：        https://github.com/DSPBluePrints  
+镜像仓库：      https://gitee.com/DSPBluePrints  
+视频教程：      https://www.bilibili.com/video/bv1RK411Z7b2  
 
 ---
 
