@@ -21,6 +21,8 @@
 
 ## 蓝图仓库使用方法
 
+视频使用教程：https://www.bilibili.com/video/bv1RK411Z7b2  
+
 ### 基础用法
 
 您可以直接进入[蓝图仓库的网页](https://github.com/DSPBluePrints/FactoryBluePrints)，寻找并打开自己需要的蓝图文件，点击位于蓝图代码右上方的**全选复制**(Copy raw contents)。  
