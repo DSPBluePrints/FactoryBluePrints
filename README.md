@@ -37,7 +37,8 @@
 git clone https://github.com/DSPBluePrints/FactoryBluePrints.git
 ```
 
-可以通过`pull`命令进行对本地蓝图文件夹进行更新。Git将自动检查上次更新以来发生变动的蓝图/蓝图合集，并以增量更新的形式更新本地仓库(约1-5mb)
+可以通过`pull`命令进行对本地蓝图文件夹进行更新。Git将自动检查上次更新以来发生变动的蓝图/蓝图合集，并以增量更新的形式更新本地仓库(约1-5mb)  
+**或者直接双击仓库根目录下的"双击更新蓝图仓库.bat"**  
 
 ```cmd
 git pull origin main
