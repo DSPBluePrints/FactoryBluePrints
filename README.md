@@ -64,3 +64,25 @@ git pull origin main
 全球火箭发射: [火箭发射1.88w](./造球打帆射火箭)  
 
 仙术八重大矿机：[钛极八矿图](./采矿/钛极八矿图)  
+
+## 常见问题
+
+### ssl_read 10054 报错
+
+解决方案1:
+进入.git文件夹,找到config文件,使用记事本打开,修改
+```cmd
+url = https://github.com/DSPBluePrints/FactoryBluePrints.git
+```
+为
+```cmd
+url = git@github.com:DSPBluePrints/FactoryBluePrints.git
+```
+
+解决方案2:
+通过两条指令禁用ssl
+```cmd
+git config --global --unset https.proxy
+
+git config --global http.sslVerify "false"
+```
