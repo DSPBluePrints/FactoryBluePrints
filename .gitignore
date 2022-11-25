@@ -1,5 +1,7 @@
 MinGit/
 
+*.bat
+
 *.zip
 *.7z
 *.rar
