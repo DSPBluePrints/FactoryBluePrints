@@ -1,4 +1,5 @@
 chcp 65001
+@echo off
 
 	set LOG_PATH=.\update.log
 
