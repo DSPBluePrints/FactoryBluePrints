@@ -1,5 +1,7 @@
 MinGit/
 
+*.log
+
 *.zip
 *.7z
 *.rar
