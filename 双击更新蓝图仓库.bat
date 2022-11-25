@@ -22,26 +22,26 @@ chcp 65001
 	)
 
 	if exist ".\.git" (
-		echo INF: %date% %time% .git found >> %LOG_PATH%
+		echo INF: %date% %time% ".git" found >> %LOG_PATH%
 		goto git_init
 	) else (
 		echo 警告：没有找到.git文件夹
-		echo WAR: %date% %time% .git no found >> %LOG_PATH%
+		echo WAR: %date% %time% ".git" no found >> %LOG_PATH%
 		goto git_no_init
 	)
 
 :git_no_init
 	echo 正在尝试重建.git
-	echo INF: %date% %time% .git init start >> %LOG_PATH%
+	echo INF: %date% %time% ".git" init start >> %LOG_PATH%
 	%GIT_PATH% init
 	%GIT_PATH% branch -M main
 	%GIT_PATH% remote add origin https://github.com/DSPBluePrints/FactoryBluePrints.git
-	echo INF: %date% %time% .git init end >> %LOG_PATH%
+	echo INF: %date% %time% ".git" init end >> %LOG_PATH%
 
 :git_init
-	echo INF: %date% %time% .git pull start >> %LOG_PATH%
+	echo INF: %date% %time% git pull start >> %LOG_PATH%
 	%GIT_PATH% pull origin main
-	echo INF: %date% %time% .git pull end >> %LOG_PATH%
+	echo INF: %date% %time% git pull end >> %LOG_PATH%
 
 :end
 	echo INF: %date% %time% Exit >> %LOG_PATH%
