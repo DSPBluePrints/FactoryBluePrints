@@ -40,6 +40,7 @@ chcp 65001
 
 :git_init
 	echo INF: %date% %time% git pull start >> %LOG_PATH%
+	set GIT_SSL_NO_VERIFY=true
 	%GIT_PATH% pull origin main
 	echo INF: %date% %time% git pull end >> %LOG_PATH%
 
