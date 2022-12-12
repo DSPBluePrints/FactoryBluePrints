@@ -1,0 +1,9 @@
+MinGit/
+
+*.log
+
+*.sha256
+
+*.zip
+*.7z
+*.rar
