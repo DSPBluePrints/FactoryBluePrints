@@ -1,4 +1,5 @@
 *.txt linguist-detectable=true linguist-language=text
+*.csv linguist-detectable=true linguist-language=text
 *.json linguist-detectable=true linguist-language=json
 *.md linguist-detectable=true linguist-language=markdown
 *.html linguist-detectable=true linguist-language=html
