@@ -16,9 +16,9 @@ chcp 65001
 		set GIT_PATH=git
 		echo INF: %date% %time% GIT_PATH=Git >> %LOG_PATH%
 	) else (
-		echo 错误：无法找到Git或MinGit
-		echo ERR: %date% %time% Git/MinGit no found >> %LOG_PATH%
-		goto err
+		echo 警告：无法找到Git或MinGit。如果更新能正常进行请忽略
+		echo WAR: %date% %time% Git/MinGit no found >> %LOG_PATH%
+		set GIT_PATH=git
 	)
 
 	if exist ".\.git" (
@@ -46,11 +46,5 @@ chcp 65001
 
 :end
 	echo INF: %date% %time% Exit >> %LOG_PATH%
-	pause
-	exit
-
-:err
-	echo 存在异常，无法更新
-	echo INF: %date% %time% Exit with error >> %LOG_PATH%
 	pause
 	exit
