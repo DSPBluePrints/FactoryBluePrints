@@ -37,7 +37,7 @@
 ### 第一次下载
 
 1. 在电脑上打开github上的蓝图仓库主页: https://github.com/DSPBluePrints/FactoryBluePrints
-2. 打开位于主页右边的**Releases**页面，下载最新的蓝图包，文件名应该叫`FactoryBluePrints_2.2.0.zip`
+2. 从这个页面->[**Releases**](https://github.com/DSPBluePrints/FactoryBluePrints/releases)<-，下载最新的蓝图包，文件名应该叫`FactoryBluePrints_2.2.0.zip`，请**不要**从绿色的Code处下载，那样文件不！完！整！
 3. 解压后，像其他普通的蓝图包一样，放入游戏的默认蓝图文件夹。放进去以后应该是这样：`C:\Users\用户名\Documents\Dyson Sphere Program\Blueprint\FactoryBluePrints\README.md`
 
 ### 更新
