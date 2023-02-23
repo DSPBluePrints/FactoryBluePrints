@@ -14,24 +14,28 @@
 
 ## 简介 | Introduction
 
-> 这是游戏[戴森球计划](https://store.steampowered.com/app/1366540/_/)中的蓝图仓库，用于储存与分享来自社区的工厂蓝图 <br>> 
-This is the blueprint warehouse in the game [Dyson Ball Project](https://store.steampowered.com/app/1366540/_/), used to store and share factory blueprints from the community
 
-最早一批蓝图主要由**小马蓝图群**成员与**CIDT设科院**成员贡献。为了对来自社区的庞大数量的蓝图进行分类、管理、储存与分享，我们打算将蓝图上传到github作为交流群文件的备份，并且将来可能进一步建设成为蓝图网。 <br>
-The first batch of blueprints were mainly contributed by members of **Pony Blueprint Group** and members of **CIDT Institute of Science**. In order to classify, manage, store and share a huge number of blueprints from the community, we plan to upload the blueprints to github as a backup of the communication group files, and may further build a blueprint network in the future.
+这是游戏[**戴森球计划**](https://store.steampowered.com/app/1366540/_/)中的蓝图仓库，用于储存与分享来自社区的工厂蓝图  
+This is the blueprint repository in the game [**Dyson Sphere Program**](https://store.steampowered.com/app/1366540/_/), used to store and share Factory blueprints from the community
 
-您可以加入交流群并将蓝图上传到群文件，我们将不定时将群文件中的蓝图分类上传到仓库中，如有遗漏可以在群里提醒我们。您也可以通过pull request的形式直接投稿，请根据蓝图功能投稿到最合适的文件夹。如有任何意见与建议，或者希望加入我们，您可以通过这些方式联系：<br>
-You can join the communication group and upload the blueprint to the group file. We will classify and upload the blueprint in the group file to the warehouse from time to time. If there is any omission, you can remind us in the group. You can also submit directly in the form of pull request, please submit to the most appropriate folder according to the blueprint function. If you have any comments and suggestions, or want to join us, you can contact us through these methods:
+最早一批蓝图主要由**小马蓝图群**成员与**CIDT设科院**成员贡献。为了对来自社区的庞大数量的蓝图进行分类、管理、储存与分享，我们打算将蓝图上传到github作为交流群文件的备份，并且将来可能进一步建设成为蓝图网。  
+The first batch of blueprints were mainly contributed by members of **小马蓝图群** and **Cosmical Institute of Design and Technology**. In order to classify, manage, store and share a large number of blueprints from the community, we plan to upload the blueprints to github as a backup of the QQ group files, and may further build a blueprint network in the future.  
+
+您可以加入交流群并将蓝图上传到群文件，我们将不定时将群文件中的蓝图分类上传到仓库中，如有遗漏可以在群里提醒我们。您也可以通过pull request的形式直接投稿，请根据蓝图功能投稿到最合适的文件夹。  
+You can join the QQ group and upload the blueprint to the group file. We will classify and upload the blueprint in the group file to the warehouse from time to time. If there is any omission, you can remind us in the QQ group. You can also submit directly in the form of pull request, please submit to the most appropriate folder according to the blueprint function.
+
+除了github，您可以通过这些方式联系我们： (QQ群)  
+Except for github, you can contact us in these ways: (QQ Group)
 
 ```text
-914523440（小马蓝图5群）
-611954295（小马蓝图4群）
-342139527（小马蓝图3群）
-949098605（小马蓝图2群）
+914523440 小马蓝图5群
+611954295 小马蓝图4群
+342139527 小马蓝图3群
+949098605 小马蓝图2群
 
-150369431（CIDT学院群）
+150369431 CIDT学院群
 
-162065696（我自己的小群）
+162065696 戴森球计划蓝图仓库（蓝图仓库维护群）
 ```
 
 ---
