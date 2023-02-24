@@ -40,6 +40,7 @@ echo INF: %date% %time% ".git" init end>>%LOG_PATH%
 
 :git_init
 echo INF: %date% %time% git pull start>>%LOG_PATH%
+git config core.longpaths true
 set GIT_SSL_NO_VERIFY=true
 %GIT_PATH% pull origin main
 echo INF: %date% %time% git pull end>>%LOG_PATH%
