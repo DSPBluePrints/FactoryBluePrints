@@ -18,7 +18,7 @@
 这是游戏[**戴森球计划**](https://store.steampowered.com/app/1366540/_/)中的蓝图仓库，用于储存与分享来自社区的工厂蓝图  
 This is the blueprint repository in the game [**Dyson Sphere Program**](https://store.steampowered.com/app/1366540/_/), used to store and share Factory blueprints from the community
 
-最早一批蓝图主要由**小马蓝图群**成员与**CIDT设科院**成员贡献。为了对来自社区的庞大数量的蓝图进行分类、管理、储存与分享，我们打算将蓝图上传到github作为交流群文件的备份，并且将来可能进一步建设成为蓝图网。  
+最早一批蓝图主要由**小马蓝图群**成员与[**CIDT设科院**](https://dspcidt.cn/)成员贡献。为了对来自社区的庞大数量的蓝图进行分类、管理、储存与分享，我们打算将蓝图上传到github作为交流群文件的备份，并且将来可能进一步建设成为蓝图网。  
 The first batch of blueprints were mainly contributed by members of **小马蓝图群** and **Cosmical Institute of Design and Technology**. In order to classify, manage, store and share a large number of blueprints from the community, we plan to upload the blueprints to github as a backup of the QQ group files, and may further build a blueprint network in the future.  
 
 您可以加入交流群并将蓝图上传到群文件，我们将不定时将群文件中的蓝图分类上传到仓库中，如有遗漏可以在群里提醒我们。您也可以通过pull request的形式直接投稿，请根据蓝图功能投稿到最合适的文件夹。  
