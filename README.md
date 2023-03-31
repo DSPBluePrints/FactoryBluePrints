@@ -62,51 +62,7 @@ Just double click: `双击更新蓝图仓库.bat`
 > Q: 为什么我打不开蓝图仓库主页 / 下载特别慢 / 更新特别慢？<br>
 Why can't I open the homepage of the blueprint warehouse / the download is very slow / the update is very slow?
 > A: 通常是网络问题。蓝图仓库被托管在github上，可以通过在[Watt Toolkit](https://steampp.net)(原名steam++)中开启github加速服务解决。~~或者魔法？~~ <br>
-A: Usually a network problem. The blueprint warehouse is hosted on github, which can be resolved by enabling the github acceleration service in [Watt Toolkit](https://steampp.net) (formerly known as steam++). ~~ Or magic? ~~
-
-<!--
-
-### 以下内容已过时，出于信息完整性考虑暂不删除，但是已经隐藏
-
-### 视频教程
-
-内容同下方的文字教程，视频时长约1.5min  
-https://www.bilibili.com/video/bv1RK411Z7b2  
-
----
-
-### 文字教程
-
-#### 基础用法
-
-您可以直接进入[蓝图仓库的网页](https://github.com/DSPBluePrints/FactoryBluePrints)，寻找并打开自己需要的蓝图文件，点击位于蓝图代码右上方的**全选复制**(Copy raw contents)。  
-然后进入游戏，在蓝图页面依次点击**新建空蓝图**，**粘贴**，**保存更改**，就可以将蓝图代码保存到本地，像平常那样使用。  
-
-> 常见问题：  
-> Q: 为什么蓝图仓库网页打开特别慢，我该怎么办？  
-> A: 蓝图仓库被托管在github上，可以通过在[Watt Toolkit](https://steampp.net)(原名steam++)中开启github加速服务解决。~~或者魔法？~~  
-
-#### 进阶用法
-
-如果您有[Git](https://git-scm.com/)的使用基础，**可以将整个蓝图仓库用`clone`命令拉取到游戏的蓝图文件夹内**。这样您将以蓝图合集的形式将完整的蓝图仓库下载到本地，并且可以在游戏内直接访问，享受在线蓝图仓库与游戏无缝衔接的体验。  
-
-```cmd
-git clone https://github.com/DSPBluePrints/FactoryBluePrints.git
-```
-
-> 常见问题：  
-> Q: `error: SSL_read` 相关  
-> A: 通常是网络波动，重试即可。如果已经排除网络问题可以搜索 `git SSL_read` 并逐一排查错误原因，此处不再赘述  
-
-除非你真的非常清楚你正在做什么，否则请不要手动修改`.git`文件夹内的任何文件，这可能导致以后的自动更新出错  
-
-可以通过`pull`命令进行对本地蓝图文件夹进行更新。Git将自动检查上次更新以来发生变动的蓝图/蓝图合集，并以增量更新的形式更新本地仓库  
-**或者直接双击仓库根目录下的"双击更新蓝图仓库.bat"**  
-
-```cmd
-git pull origin main
-```
--->
+A: Usually a network problem. The blueprint warehouse is hosted on github, which can be resolved by enabling the github acceleration service in [Watt Toolkit](https://steampp.net) (formerly known as steam++). ~~Or magic?~~
 
 ---
 

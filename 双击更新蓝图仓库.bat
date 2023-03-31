@@ -9,6 +9,7 @@ echo ---->>%LOG_PATH%
 
 echo INF: %date% %time% Start>>%LOG_PATH%
 
+::find git
 if exist ".\MinGit\cmd\git.exe" (
 set GIT_PATH=.\MinGit\cmd\git.exe
 echo INF: %date% %time% GIT_PATH=MinGit>>%LOG_PATH%
@@ -21,31 +22,23 @@ echo WAR: %date% %time% Git/MinGit no found>>%LOG_PATH%
 set GIT_PATH=git
 )
 
-if exist ".\.git" (
-echo INF: %date% %time% ".git" found>>%LOG_PATH%
-goto git_init
-) else (
-echo 警告：没有找到.git文件夹 | Warning: No .git folder found
-echo WAR: %date% %time% ".git" no found>>%LOG_PATH%
-goto git_no_init
+::init
+if not exist ".\.gitignore" (
+%GIT_PATH% reset --hard
 )
 
-:git_no_init
-echo 正在尝试重建.git | Trying to rebuild .git
-echo INF: %date% %time% ".git" init start>>%LOG_PATH%
-%GIT_PATH% init
-%GIT_PATH% branch -M main
-%GIT_PATH% remote add origin https://github.com/DSPBluePrints/FactoryBluePrints.git
-echo INF: %date% %time% ".git" init end>>%LOG_PATH%
-
-:git_init
+::update
 echo INF: %date% %time% git pull start>>%LOG_PATH%
 git config core.longpaths true
 set GIT_SSL_NO_VERIFY=true
 %GIT_PATH% pull origin main
-echo INF: %date% %time% git pull end>>%LOG_PATH%
+set git_pull_errorlevel = %errorlevel%
+echo INF: %date% %time% git pull exit: %git_pull_errorlevel%>>%LOG_PATH%
+if %git_pull_errorlevel% NEQ 0(
+echo 错误：更新失败，这通常是网络问题。请重试，或者开加速器再更新。详见README.md
+)
 
-:end
+::end
 echo INF: %date% %time% Exit>>%LOG_PATH%
 pause
 exit
