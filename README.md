@@ -53,7 +53,8 @@ Open the blueprint warehouse homepage on github on your computer: https://github
 From this page ->[**Releases**](https://github.com/DSPBluePrints/FactoryBluePrints/releases)<-, download the latest blueprint package, the file name should be `FactoryBluePrints_X.Y.Z.7z`, please **DO NOT** download from the green Code, that file will not work! over! all!
 3. 解压后，像其他普通的蓝图包一样，放入游戏的默认蓝图文件夹。放进去以后应该是这样：`C:\Users\％用户资料％\Documents\Dyson Sphere Program\Blueprint\FactoryBluePrints\README.md` <br>
 After decompression, put it into the game's default blueprint folder like any other normal blueprint package. After putting it in, it should look like this: `C:\Users\%userprofile%\Documents\Dyson Sphere Program\Blueprint\FactoryBluePrints\README.md`
-4. **第一次使用必须先更新，不然此时没有任何蓝图。**
+4. **第一次使用必须先更新，不然此时没有任何蓝图。**<br>
+**You have to double click the `双击更新蓝图仓库.bat` to initialization all blueprint**
 
 ### 更新 | Update
 
