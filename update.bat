@@ -1,5 +1,6 @@
 chcp 65001
 @echo off
+cd %~dp0
 
 ::debug info
 set LOG_PATH=.\update.log
