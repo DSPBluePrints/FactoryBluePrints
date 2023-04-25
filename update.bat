@@ -25,8 +25,8 @@ goto end_with_error
 
 ::find .git/
 if not exist ".git" (
-echo 错误：无法找到git.exe ^| Error: git.exe no found
-echo %date% %time% Error: git.exe no found>>%LOG_PATH%
+echo 错误：无法找到.git/ ^| Error: .git no found
+echo %date% %time% Error: .git/ no found>>%LOG_PATH%
 goto end_with_error
 )
 
