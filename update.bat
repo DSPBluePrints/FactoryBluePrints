@@ -31,7 +31,7 @@ goto end_with_error
 )
 
 ::test .git/
-git rev-parse --is-inside-work-tree
+%GIT_PATH% rev-parse --is-inside-work-tree
 if %errorlevel% NEQ 0 (
 echo 错误：.git/已损坏 ^| Error: .git/ is broken
 echo %date% %time% Error: .git/ is broken>>%LOG_PATH%
