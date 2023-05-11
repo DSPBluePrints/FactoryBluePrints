@@ -57,7 +57,7 @@ echo %date% %time% Infomation: %GIT_PATH% reset --hard>>%LOG_PATH%
 set GIT_SSL_NO_VERIFY=true
 %GIT_PATH% pull origin main
 if %errorlevel% NEQ 0 (
-echo 错误：更新失败。这通常是网络问题，重试就行，或者开加速器再更新。
+echo 错误：更新失败。如果没有其他警告，这通常是网络波动，重试就行，无效请使用加速器/挂梯子后再更新。
 echo %date% %time% Error: %GIT_PATH% pull origin main>>%LOG_PATH%
 goto end_with_error
 ) else (
