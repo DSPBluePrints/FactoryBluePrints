@@ -7,5 +7,5 @@ FactoryBluePrints.rar: .git update.bat README.md README_EN.md MinGit
 	$(RAR) k $@
 
 clear:
-	rm *.rar
 	$(GIT) repack -a -d --depth=4095 --window=4095
+	rm *.rar
