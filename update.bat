@@ -40,7 +40,7 @@ goto end_with_error
 )
 
 ::test .git/
-%GIT_PATH% rev-parse --resolve-git-dir "%~dp0.git"
+%GIT_PATH% rev-parse --path-format=absolute --git-dir
 if %errorlevel% NEQ 0 (
 echo 错误：.git/已损坏
 echo %date% %time% Error: .git/ is broken>>%LOG_PATH%
