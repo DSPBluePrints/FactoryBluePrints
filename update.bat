@@ -8,6 +8,7 @@ dir>%LOG_PATH%
 echo ---->>%LOG_PATH%
 
 ::test dir
+echo %~dp0
 cd ..
 cd ..
 if not exist "Blueprint" (
@@ -40,7 +41,7 @@ goto end_with_error
 )
 
 ::test .git/
-%GIT_PATH% rev-parse --is-inside-work-tree
+%GIT_PATH% rev-parse --is-inside-work-tree>>%LOG_PATH%
 if %errorlevel% NEQ 0 (
 echo 错误：.git/已损坏
 echo %date% %time% Error: .git/ is broken>>%LOG_PATH%
