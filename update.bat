@@ -47,6 +47,10 @@ echo %date% %time% Error: .git/ is broken>>%LOG_PATH%
 goto end_with_error
 )
 
+::config
+%GIT_PATH% config --local core.quotepath false
+%GIT_PATH% config --local http.sslVerify false
+
 ::init
 if not exist ".\.gitignore" (
 %GIT_PATH% reset --hard
@@ -54,7 +58,6 @@ echo %date% %time% Infomation: %GIT_PATH% reset --hard>>%LOG_PATH%
 )
 
 ::update
-set GIT_SSL_NO_VERIFY=true
 %GIT_PATH% pull origin main
 if %errorlevel% NEQ 0 (
 echo 错误：更新失败。如果没有其他警告，这通常是网络波动，重试就行，无效请使用加速器/挂梯子后再更新。
