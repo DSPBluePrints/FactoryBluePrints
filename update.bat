@@ -1,4 +1,3 @@
-chcp 65001
 @echo off
 cd %~dp0
 
@@ -11,7 +10,7 @@ echo ---->>%LOG_PATH%
 cd ..
 cd ..
 if not exist "Blueprint" (
-echo è­¦å‘Šï¼šæ‚¨ä¼¼ä¹Žå®‰è£…åˆ°äº†é”™è¯¯çš„è·¯å¾„ï¼Œè¿™å¯èƒ½å¯¼è‡´æ–‡ä»¶æƒé™å¼‚å¸¸
+echo ¾¯¸æ£ºÄúËÆºõ°²×°µ½ÁË´íÎóµÄÂ·¾¶£¬Õâ¿ÉÄÜµ¼ÖÂÎÄ¼þÈ¨ÏÞÒì³£
 )
 cd %~dp0
 
@@ -27,14 +26,14 @@ echo %date% %time% Infomation: GIT_PATH=git>>%LOG_PATH%
 ::test git.exe
 %GIT_PATH% -v
 if %errorlevel% NEQ 0 (
-echo é”™è¯¯ï¼šæ— æ³•æ‰¾åˆ°git.exe
+echo ´íÎó£ºÎÞ·¨ÕÒµ½git.exe
 echo %date% %time% Error: git.exe no found>>%LOG_PATH%
 goto end_with_error
 )
 
 ::find .git/
 if not exist ".git" (
-echo é”™è¯¯ï¼šæ— æ³•æ‰¾åˆ°.git/
+echo ´íÎó£ºÎÞ·¨ÕÒµ½.git/
 echo %date% %time% Error: .git/ no found>>%LOG_PATH%
 goto end_with_error
 )
@@ -42,7 +41,7 @@ goto end_with_error
 ::test .git/
 %GIT_PATH% rev-parse --path-format=absolute --git-dir
 if %errorlevel% NEQ 0 (
-echo é”™è¯¯ï¼š.git/å·²æŸå
+echo ´íÎó£º.git/ÒÑËð»µ
 echo %date% %time% Error: .git/ is broken>>%LOG_PATH%
 goto end_with_error
 )
@@ -60,7 +59,7 @@ echo %date% %time% Infomation: %GIT_PATH% reset --hard>>%LOG_PATH%
 ::update
 %GIT_PATH% pull origin main
 if %errorlevel% NEQ 0 (
-echo é”™è¯¯ï¼šæ›´æ–°å¤±è´¥ã€‚å¦‚æžœæ²¡æœ‰å…¶ä»–è­¦å‘Šï¼Œè¿™é€šå¸¸æ˜¯ç½‘ç»œæ³¢åŠ¨ï¼Œé‡è¯•å°±è¡Œï¼Œæ— æ•ˆè¯·ä½¿ç”¨åŠ é€Ÿå™¨/æŒ‚æ¢¯å­åŽå†æ›´æ–°ã€‚
+echo ´íÎó£º¸üÐÂÊ§°Ü¡£Èç¹ûÃ»ÓÐÆäËû¾¯¸æ£¬ÕâÍ¨³£ÊÇÍøÂç²¨¶¯£¬ÖØÊÔ¾ÍÐÐ£¬ÎÞÐ§ÇëÊ¹ÓÃ¼ÓËÙÆ÷/¹ÒÌÝ×ÓºóÔÙ¸üÐÂ¡£
 echo %date% %time% Error: %GIT_PATH% pull origin main>>%LOG_PATH%
 goto end_with_error
 ) else (
@@ -68,15 +67,15 @@ echo %date% %time% Infomation: %GIT_PATH% pull origin main>>%LOG_PATH%
 )
 
 :end
-echo è“å›¾æ–‡ä»¶æ›´æ–°å®Œæˆï¼ŒçŽ°åœ¨å¯ä»¥ç›´æŽ¥å…³é—­æ­¤çª—å£
+echo À¶Í¼ÎÄ¼þ¸üÐÂÍê³É£¬ÏÖÔÚ¿ÉÒÔÖ±½Ó¹Ø±Õ´Ë´°¿Ú
 echo %date% %time% Infomation: Exit>>%LOG_PATH%
 pause
 exit
 
 :end_with_error
-echo æ›´æ–°å› ä¸ºå‡ºçŽ°é”™è¯¯è€Œä¸­æ­¢ï¼Œè“å›¾æ–‡ä»¶æ²¡æœ‰å‘ç”Ÿä»»ä½•å˜åŠ¨
-echo å¸¸è§é—®é¢˜è¯·é˜…è¯»è¯´æ˜Žhttps://github.com/DSPBluePrints/FactoryBluePrints/blob/main/README.md
-echo å¦‚æžœä»ç„¶å­˜ç–‘å¯ä»¥åŠ qqç¾¤åé¦ˆï¼š162065696ã€‚è¯·é™„ä¸Šæ­¤é¡µé¢æˆªå›¾å’Œupdate.logæˆªå›¾ã€‚
+echo ¸üÐÂÒòÎª³öÏÖ´íÎó¶øÖÐÖ¹£¬À¶Í¼ÎÄ¼þÃ»ÓÐ·¢ÉúÈÎºÎ±ä¶¯
+echo ³£¼ûÎÊÌâÇëÔÄ¶ÁËµÃ÷https://github.com/DSPBluePrints/FactoryBluePrints/blob/main/README.md
+echo Èç¹ûÈÔÈ»´æÒÉ¿ÉÒÔ¼ÓqqÈº·´À¡£º162065696¡£Çë¸½ÉÏ´ËÒ³Ãæ½ØÍ¼ºÍupdate.log½ØÍ¼¡£
 echo %date% %time% Infomation: Exit>>%LOG_PATH%
 pause
 exit
