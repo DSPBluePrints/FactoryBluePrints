@@ -1,5 +1,5 @@
 @echo off
-cd %~dp0
+cd "%~dp0"
 
 ::debug info
 set LOG_PATH=.\update.log
@@ -12,7 +12,7 @@ cd ..
 if not exist "Blueprint" (
 echo 警告：您似乎安装到了错误的路径，这可能导致文件权限异常
 )
-cd %~dp0
+cd "%~dp0"
 
 ::find git.exe
 if exist ".\MinGit\cmd\git.exe" (
