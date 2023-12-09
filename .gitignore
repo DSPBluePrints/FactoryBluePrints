@@ -8,3 +8,8 @@ MinGit/
 *.zip
 *.7z
 *.rar
+
+*.exe
+
+*.dsv
+*.mecha
