@@ -12,4 +12,5 @@ MinGit/
 *.exe
 
 *.dsv
+*.moddsv
 *.mecha
