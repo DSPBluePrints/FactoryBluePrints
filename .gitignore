@@ -2,7 +2,7 @@ MinGit/
 7-zip/
 
 *.log
-
+.idea/
 *.sha256
 
 *.zip
