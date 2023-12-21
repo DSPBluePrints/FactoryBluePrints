@@ -1,6 +1,9 @@
 @echo off
 cd "%~dp0"
 
+::变量
+set WARNING_TEST_DIR=0
+
 ::debug info
 set LOG_PATH=.\update.log
 dir>%LOG_PATH%
@@ -10,6 +13,8 @@ echo ---->>%LOG_PATH%
 cd ..
 cd ..
 if not exist "Blueprint" (
+set WARNING_TEST_DIR=1
+echo %date% %time% Warning: Abnormal installation path>>%LOG_PATH%
 echo 警告：您似乎安装到了错误的路径，这可能导致文件权限异常
 )
 cd "%~dp0"
@@ -41,6 +46,12 @@ goto end_with_error
 ::test .git/
 %GIT_PATH% rev-parse --path-format=absolute --git-dir
 if %errorlevel% NEQ 0 (
+if %WARNING_TEST_DIR% NEQ 0 (
+echo 错误：文件权限异常。这通常是因为git无权读写整个蓝图文件夹。
+echo 请在解压蓝图仓库后，连同外面的文件夹一起放入，而不是将压缩包中的文件直接解压进蓝图文件夹。
+echo %date% %time% Error: .git/ is broken>>%LOG_PATH%
+goto end_with_error
+)
 echo 错误：.git/已损坏
 echo %date% %time% Error: .git/ is broken>>%LOG_PATH%
 goto end_with_error
@@ -59,7 +70,7 @@ echo %date% %time% Infomation: %GIT_PATH% reset --hard>>%LOG_PATH%
 ::update
 %GIT_PATH% pull origin main
 if %errorlevel% NEQ 0 (
-echo 错误：更新失败。如果没有其他警告，这通常是网络波动，重试就行，无效请使用加速器/挂梯子后再更新。
+echo 错误：更新获取失败。这通常是网络波动，重试就行，无效请使用加速器/挂梯子后再更新。
 echo %date% %time% Error: %GIT_PATH% pull origin main>>%LOG_PATH%
 goto end_with_error
 ) else (
