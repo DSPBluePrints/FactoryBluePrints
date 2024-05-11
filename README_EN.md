@@ -31,7 +31,7 @@ Except for github, you can contact us in these ways: (QQ Group)
 
 752416362 重装小兔粉丝群
 
-162065696 戴森球计划蓝图仓库（蓝图仓库维护群）
+936739864 戴森球计划蓝图仓库（蓝图仓库维护群）
 ```
 
 ---
