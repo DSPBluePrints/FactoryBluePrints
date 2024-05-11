@@ -1,7 +1,7 @@
 @echo off
 cd "%~dp0"
 
-::å˜é‡
+::±äÁ¿
 set WARNING_TEST_DIR=0
 
 ::debug info
@@ -15,7 +15,7 @@ cd ..
 if not exist "Blueprint" (
 set WARNING_TEST_DIR=1
 echo %date% %time% Warning: Abnormal installation path>>%LOG_PATH%
-echo è­¦å‘Šï¼šæ‚¨ä¼¼ä¹Žå®‰è£…åˆ°äº†é”™è¯¯çš„è·¯å¾„ï¼Œè¿™å¯èƒ½å¯¼è‡´æ–‡ä»¶æƒé™å¼‚å¸¸
+echo ¾¯¸æ£ºÄúËÆºõ°²×°µ½ÁË´íÎóµÄÂ·¾¶£¬Õâ¿ÉÄÜµ¼ÖÂÎÄ¼þÈ¨ÏÞÒì³£
 )
 cd "%~dp0"
 
@@ -31,14 +31,14 @@ echo %date% %time% Infomation: GIT_PATH=git>>%LOG_PATH%
 ::test git.exe
 %GIT_PATH% -v
 if %errorlevel% NEQ 0 (
-echo é”™è¯¯ï¼šæ— æ³•æ‰¾åˆ°git.exe
+echo ´íÎó£ºÎÞ·¨ÕÒµ½git.exe
 echo %date% %time% Error: git.exe no found>>%LOG_PATH%
 goto end_with_error
 )
 
 ::find .git/
 if not exist ".git" (
-echo é”™è¯¯ï¼šæ— æ³•æ‰¾åˆ°.git/
+echo ´íÎó£ºÎÞ·¨ÕÒµ½.git/
 echo %date% %time% Error: .git/ no found>>%LOG_PATH%
 goto end_with_error
 )
@@ -47,12 +47,12 @@ goto end_with_error
 %GIT_PATH% rev-parse --path-format=absolute --git-dir
 if %errorlevel% NEQ 0 (
 if %WARNING_TEST_DIR% NEQ 0 (
-echo é”™è¯¯ï¼šæ–‡ä»¶æƒé™å¼‚å¸¸ã€‚è¿™é€šå¸¸æ˜¯å› ä¸ºgitæ— æƒè¯»å†™æ•´ä¸ªè“å›¾æ–‡ä»¶å¤¹ã€‚
-echo è¯·åœ¨è§£åŽ‹è“å›¾ä»“åº“åŽï¼Œè¿žåŒå¤–é¢çš„æ–‡ä»¶å¤¹ä¸€èµ·æ”¾å…¥ï¼Œè€Œä¸æ˜¯å°†åŽ‹ç¼©åŒ…ä¸­çš„æ–‡ä»¶ç›´æŽ¥è§£åŽ‹è¿›è“å›¾æ–‡ä»¶å¤¹ã€‚
+echo ´íÎó£ºÎÄ¼þÈ¨ÏÞÒì³£¡£ÕâÍ¨³£ÊÇÒòÎªgitÎÞÈ¨¶ÁÐ´Õû¸öÀ¶Í¼ÎÄ¼þ¼Ð¡£
+echo ÇëÔÚ½âÑ¹À¶Í¼²Ö¿âºó£¬Á¬Í¬ÍâÃæµÄÎÄ¼þ¼ÐÒ»Æð·ÅÈë£¬¶ø²»ÊÇ½«Ñ¹Ëõ°üÖÐµÄÎÄ¼þÖ±½Ó½âÑ¹½øÀ¶Í¼ÎÄ¼þ¼Ð¡£
 echo %date% %time% Error: .git/ is broken>>%LOG_PATH%
 goto end_with_error
 )
-echo é”™è¯¯ï¼š.git/å·²æŸå
+echo ´íÎó£º.git/ÒÑËð»µ
 echo %date% %time% Error: .git/ is broken>>%LOG_PATH%
 goto end_with_error
 )
@@ -70,7 +70,7 @@ echo %date% %time% Infomation: %GIT_PATH% reset --hard>>%LOG_PATH%
 ::update
 %GIT_PATH% pull origin main
 if %errorlevel% NEQ 0 (
-echo é”™è¯¯ï¼šæ›´æ–°èŽ·å–å¤±è´¥ã€‚è¿™é€šå¸¸æ˜¯ç½‘ç»œæ³¢åŠ¨ï¼Œé‡è¯•å°±è¡Œï¼Œæ— æ•ˆè¯·ä½¿ç”¨åŠ é€Ÿå™¨/æŒ‚æ¢¯å­åŽå†æ›´æ–°ã€‚
+echo ´íÎó£º¸üÐÂ»ñÈ¡Ê§°Ü¡£ÕâÍ¨³£ÊÇÍøÂç²¨¶¯£¬ÖØÊÔ¾ÍÐÐ£¬ÎÞÐ§ÇëÊ¹ÓÃ¼ÓËÙÆ÷/¹ÒÌÝ×ÓºóÔÙ¸üÐÂ¡£
 echo %date% %time% Error: %GIT_PATH% pull origin main>>%LOG_PATH%
 goto end_with_error
 ) else (
@@ -78,15 +78,15 @@ echo %date% %time% Infomation: %GIT_PATH% pull origin main>>%LOG_PATH%
 )
 
 :end
-echo è“å›¾æ–‡ä»¶æ›´æ–°å®Œæˆï¼ŒçŽ°åœ¨å¯ä»¥ç›´æŽ¥å…³é—­æ­¤çª—å£
+echo À¶Í¼ÎÄ¼þ¸üÐÂÍê³É£¬ÏÖÔÚ¿ÉÒÔÖ±½Ó¹Ø±Õ´Ë´°¿Ú
 echo %date% %time% Infomation: Exit>>%LOG_PATH%
 pause
 exit
 
 :end_with_error
-echo æ›´æ–°å› ä¸ºå‡ºçŽ°é”™è¯¯è€Œä¸­æ­¢ï¼Œè“å›¾æ–‡ä»¶æ²¡æœ‰å‘ç”Ÿä»»ä½•å˜åŠ¨
-echo å¸¸è§é—®é¢˜è¯·é˜…è¯»è¯´æ˜Žhttps://github.com/DSPBluePrints/FactoryBluePrints/blob/main/README.md
-echo å¦‚æžœä»ç„¶å­˜ç–‘å¯ä»¥åŠ qqç¾¤åé¦ˆï¼š936739864ã€‚è¯·é™„ä¸Šæ­¤é¡µé¢æˆªå›¾å’Œupdate.logæˆªå›¾ã€‚
+echo ¸üÐÂÒòÎª³öÏÖ´íÎó¶øÖÐÖ¹£¬À¶Í¼ÎÄ¼þÃ»ÓÐ·¢ÉúÈÎºÎ±ä¶¯
+echo ³£¼ûÎÊÌâÇëÔÄ¶ÁËµÃ÷https://github.com/DSPBluePrints/FactoryBluePrints/blob/main/README.md
+echo Èç¹ûÈÔÈ»´æÒÉ¿ÉÒÔ¼ÓqqÈº·´À¡£º936739864¡£Çë¸½ÉÏ´ËÒ³Ãæ½ØÍ¼ºÍupdate.log½ØÍ¼¡£
 echo %date% %time% Infomation: Exit>>%LOG_PATH%
 pause
 exit
