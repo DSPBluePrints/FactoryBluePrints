@@ -86,7 +86,7 @@ exit
 :end_with_error
 echo 更新因为出现错误而中止，蓝图文件没有发生任何变动
 echo 常见问题请阅读说明https://github.com/DSPBluePrints/FactoryBluePrints/blob/main/README.md
-echo 如果仍然存疑可以加qq群反馈：162065696。请附上此页面截图和update.log截图。
+echo 如果仍然存疑可以加qq群反馈：936739864。请附上此页面截图和update.log截图。
 echo %date% %time% Infomation: Exit>>%LOG_PATH%
 pause
 exit
