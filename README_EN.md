@@ -22,16 +22,20 @@ You can join the QQ group and upload the blueprint to the group file. We will cl
 Except for github, you can contact us in these ways: (QQ Group)  
 
 ```text
+936739864 戴森球计划蓝图仓库
+```
+
+```text
+150369431 CIDT学院群
+
 914523440 小马蓝图5群
 611954295 小马蓝图4群
 342139527 小马蓝图3群
 949098605 小马蓝图2群
 
-150369431 CIDT学院群
-
 752416362 重装小兔粉丝群
 
-936739864 戴森球计划蓝图仓库（蓝图仓库维护群）
+791011229 TTenYX粉丝群
 ```
 
 ---
