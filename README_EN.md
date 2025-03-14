@@ -33,10 +33,10 @@ Except for github, you can contact us in these ways: (QQ Group)
 342139527 小马蓝图3群
 949098605 小马蓝图2群
 
-752416362 重装小兔粉丝群
-
 791011229 TTenYX粉丝群
 ```
+
+<!-- 752416362 重装小兔粉丝群 -->
 
 ---
 
