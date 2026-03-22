@@ -30,12 +30,12 @@ SET MinGitVersion=2.52.0
 
 CALL :SETUP_MINGIT
 IF %errorlevel% NEQ 0 (
-  GOTO EOF_WITH_ERROR
+  GOTO EOF
 )
 
 CALL :CLONE_REPO
 IF %errorlevel% == 1 (
-  GOTO EOF_WITH_ERROR
+  GOTO EOF
 )
 IF %errorlevel% == -1 (
   GOTO END
@@ -68,7 +68,7 @@ ECHO [91m运行过程因为出现错误而中止，蓝图文件没有发生任�
 ECHO [91m常见问题请阅读说明：%READMEUrl%。[0m
 
 
-:EOF_WITH_ERROR
+:EOF
 
 ENDLOCAL
 ECHO [92m 按任意键关闭此窗口...[0m
