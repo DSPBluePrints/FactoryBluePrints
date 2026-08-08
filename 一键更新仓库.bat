@@ -3,16 +3,6 @@
 SETLOCAL enableextensions enabledelayedexpansion
 chcp 65001 >NUL
 
-REM 检查参数，如果不为空则只运行特定函数
-IF "x%1" == "x" GOTO START
-CALL :%1
-
-ENDLOCAL
-EXIT /b %errorlevel%
-
-
-:START
-
 REM 本地目录，如果当前目录有.git文件夹的存在，则不使用此目录
 SET LocalFolder=FactoryBluePrints
 
@@ -27,6 +17,16 @@ SET MinGitFolder=%ALLUSERSPROFILE%\MinGit
 
 REM MinGit版本号
 SET MinGitVersion=2.52.0
+
+REM 检查参数，如果不为空则只运行特定函数
+IF "x%1" == "x" GOTO START
+CALL :%1
+
+ENDLOCAL & SET "GIT_PATH=%GIT_PATH%"
+EXIT /b %errorlevel%
+
+
+:START
 
 CALL :SETUP_MINGIT
 IF %errorlevel% NEQ 0 (
